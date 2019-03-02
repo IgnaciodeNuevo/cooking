@@ -16,7 +16,7 @@ const recipes = [
     comensales: ['2'],
     ingredientes: ['500gr espinacas', '1 bote mediano de judía blanca en aceite', '1 cebolla roja grande', '1/2 lata de tomate triturado (bueno)', '3 dientes de ajo', 'caldo de pollo', 'Copos de chile', 'Pimienta negra molida', '1 zanahoria muy grande', 'Pasta de miso rojo', 'Aceite de oliva para sofrer', 'Parmesano rallado'],
     otros: [''],
-    preparacion: ['Cortar el ajo, espinadas, cebolla roja y zanahoria', 'Sofreir zanahoria y al poco añadir la cebolla roja', 'Añadir los tallos de las espinacas', 'Añadir el tomate triturado y seguir sofriendo', 'Añadir el reso de espnacas, copos de chile, pimienta negra y ajo y dorar 5min', 'Añadir el caldo y el miso rojo', 'Cocer a fuego medio-suave 20min', 'Los últimos 3min apagar el fuego, echar las judías blancas', 'Servir y rallar encima el parmesano'],
+    preparacion: ['Cortar el ajo, espinadas, cebolla roja y zanahoria', 'Sofreir zanahoria y al poco añadir la cebolla roja', 'Añadir los tallos de las espinacas', 'Añadir el tomate triturado y seguir sofriendo', 'Añadir el reso de espnacas, copos de chile, pimienta negra y ajo y dorar 5min', 'Añadir el caldo y el miso rojo', 'Cocer a fuego medio-suave 15min', 'Los últimos 3min apagar el fuego, echar las judías blancas', 'Servir y rallar encima el parmesano'],
     images: ['sopa_1.jpg', 'sopa_2.jpg'],
   },
 ];
