@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------------------------------
+// This file contains the Aspect Ratio mixing maintains elements aspect ratio - 4:3, 19:9
+// ---------------------------------------------------------------------------------------
+
+// Fixed Aspect Ratio
+// @params {String} $property, $variable, $fallback
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > .inner-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
