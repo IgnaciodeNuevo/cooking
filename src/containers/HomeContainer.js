@@ -17,14 +17,16 @@ class HomeContainer extends Component {
                 throw new Error('Bad response from server');
             }
             return response.json();
-        }).then(data => this.setState({ recipes: data.recipes }));
+        }).then(data => this.setState({ recipes: data.recipes })).catch(function (error) {
+            console.error(error);
+        });
     }
 
     render() {
         return (
             <Fragment>
-                <h1 className="heading">Home</h1>
                 <main className="content" role="main">
+                    <h1 className="heading">Home</h1>
                     <section className="grid">
                     </section>
                 </main>
