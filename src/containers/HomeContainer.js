@@ -26,7 +26,6 @@ class HomeContainer extends Component {
         return (
             <Fragment>
                 <main className="content" role="main">
-                    <h1 className="heading">Home</h1>
                     <section className="grid">
                     </section>
                 </main>
