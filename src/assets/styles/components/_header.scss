@@ -1,0 +1,20 @@
+.header {
+    background-color: $background-light;
+    color: $foreground-darkest;
+    padding-bottom: $space-m;
+    padding-left: $space-l;
+    padding-right: $space-l;
+    padding-top: $space-m;
+
+    &__link {
+        color: inherit;
+        display: block;
+        height: $icon-l;
+        width: $icon-l;
+    }
+
+    &__img {
+        height: inherit;
+        width: inherit;
+    }
+}
