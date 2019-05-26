@@ -1,33 +1,40 @@
-// -----------------------------------------------------------------------------
+// $---------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
 //
 // #Colors
 //
+$color-base-darkest: #141414;
+$color-base-dark: #262626;
+$color-base-medium: #333333;
+$color-base-light: #808080;
+$color-base-lightest: #efefef;
 
-// #Base-Color
-$color-white: #ffffff;
-$color-base: #000000;
-$color-base-darker: lighten($color-base, 20);
-$color-base-dark: lighten($color-base, 40);
-$color-base-light: lighten($color-base, 60);
-$color-base-lighter: lighten($color-base, 80);
+$token-lightest: #D5C7BE;
+$token-light: #DFC88A;
+$token-medium: #968465;
+$token-dark: #663422;
+$token-darkest: #2A1E15;
 
-// #Primary-Color
-$color-primary: #0047bb;
+$foreground-lightest: $token-lightest;
+$foreground-light: $token-light;
+$foreground-medium: $token-medium;
+$foreground-dark: $token-dark;
+$foreground-darkest: $token-darkest;
 
-// #Other-Colors
-$text-color-base: $color-base-dark;
-$text-color-link: $color-primary;
+$background-lightest: $token-lightest;
+$background-light: $token-light;
+$background-medium: $token-medium;
+$background-dark: $token-dark;
+$background-darkest: $token-darkest;
 
 //
 // #Box-Shadow
 //
-$box-shaodw-1: 0 1px 2px rgba($color-base-darker, 0.5);
-$box-shaodw-2: 0 1px 2px rgba($color-base-dark, 0.5);
-$box-shaodw-3: 0 1px 2px rgba($color-base-light, 0.5);
-$box-shaodw-4: 0 1px 2px rgba($color-base-lighter, 0.5);
+$box-shaodw-s: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+$box-shaodw-m: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+$box-shaodw-l: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
 
 //
 // #Animations
@@ -41,13 +48,11 @@ $animation-type-cubic: cubic-bezier(0, 0, 0.3, 1);
 //
 $font-family-body-fallback: Arial, sans-serif;
 $font-family-title-fallback: Georgia, sans-serif;
-$font-family-body-regular: 'Brando Regular Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-$font-family-body-semibold: 'Brando Semibold Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-$font-family-title: 'Guardian Bold Egyptian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, serif;
-$font-family-code: 'Input', monospace;
+$font-family-body-regular: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-title: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, serif;
 
 //
-// $Font-Weight
+// #Font-Weight
 //
 $font-weight-thin: 100;
 $font-weight-extralight: 200;
@@ -70,12 +75,6 @@ $scale: 1.25;
 $font-base: 1rem; // 16px
 $letter-spacing: 0.05em;
 $line-height: 1.4;
-
-//
-// #Spacing
-//
-$container-width: 50em; // 800px
-$container-padding: 1.25em; // 20px
 
 //
 // #Space Sizes
@@ -111,22 +110,17 @@ $icon-xxl: 8em; // 128px
 //
 // #Media-Queries
 //
-$mq-xxs: 20em; // 320px
-$mq-xs: 30em; // 480px
-$mq-s: 48em; // 768px
-$mq-m: 61.25em; // 980px
-$mq-l: 80em; // 1280px
-$mq-xl: 90em; // 1440px
-$mq-xxl: 160em; // 2650px
+$mq-s: 38.75em; // 620px
+$mq-m: 48em; // 768px
 
 //
-// $Z-Index
+// #Opacity
 //
 $opacity: 0.5;
 $opacity-hack: 0.99;
 
 //
-// $Z-Index
+// #Z-Index
 //
 $z-index-s: 1;
 $z-index-m: 2;

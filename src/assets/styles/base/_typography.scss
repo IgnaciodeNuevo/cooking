@@ -1,0 +1,20 @@
+//
+// Basic typography style for copy text
+//
+
+body {
+    color: $foreground-darkest;
+    font-family: $font-family-body-fallback;
+}
+
+// Headings font-size and line-height
+h1,
+h2 {
+    margin-bottom: $space-l;
+    margin-top: initial;
+    line-height: 1.1;
+}
+
+p {
+    @include hyphens();
+}

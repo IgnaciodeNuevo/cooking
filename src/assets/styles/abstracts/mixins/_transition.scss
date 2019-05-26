@@ -4,10 +4,10 @@
 
 // Transition Mixin
 // @params {String} $prop
-@mixin transition($prop: all) {
-    transition-duration: var(--animation-speed);
-    transition-property: $prop;
-    transition-timing-function: var(--animation-type-cubic);
+@mixin transition($prop: all, $prop2: all) {
+    transition-duration: $animation-speed;
+    transition-property: $prop, $prop2;
+    transition-timing-function: $animation-type-cubic;
 }
 
 // Usage
