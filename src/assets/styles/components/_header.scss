@@ -7,14 +7,19 @@
     padding-top: $space-m;
 
     &__link {
+        align-items: center;
         color: inherit;
-        display: block;
-        height: $icon-l;
-        width: $icon-l;
+        display: flex;
+        text-decoration: none;
+
+        h1 {
+            margin-bottom: initial;
+        }
     }
 
     &__img {
-        height: inherit;
-        width: inherit;
+        height: $icon-l;
+        margin-right: $space-xs;
+        width: $icon-l;
     }
 }
