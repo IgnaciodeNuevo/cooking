@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+import { Card } from '../components/index'
+
 class HomeContainer extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +12,7 @@ class HomeContainer extends Component {
 
     componentDidMount() {
         // Api fetch mock
-        const apiUrl = 'http://localhost:3000/api/recipes.json';
+        const apiUrl = '/api/recipes.json';
 
         fetch(apiUrl).then(function (response) {
             if (response.status >= 400) {
@@ -27,8 +29,7 @@ class HomeContainer extends Component {
             <Fragment>
                 <main className="content" role="main">
                     <section className="grid">
-                        <h1 className="playfair">Playfair Font Family</h1>
-                        <p className="muli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates aliquam repudiandae! Nobis enim sint debitis voluptatibus quisquam laborum eaque expedita, accusantium temporibus, aspernatur eius error ratione. Mollitia, aliquid distinctio?</p>
+                        <Card recipes={this.state.recipes} />
                     </section>
                 </main>
             </Fragment>
