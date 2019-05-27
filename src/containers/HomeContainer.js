@@ -27,6 +27,8 @@ class HomeContainer extends Component {
             <Fragment>
                 <main className="content" role="main">
                     <section className="grid">
+                        <h1 className="playfair">Playfair Font Family</h1>
+                        <p className="muli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates aliquam repudiandae! Nobis enim sint debitis voluptatibus quisquam laborum eaque expedita, accusantium temporibus, aspernatur eius error ratione. Mollitia, aliquid distinctio?</p>
                     </section>
                 </main>
             </Fragment>
