@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { HomeContainer } from './containers/index'
-import { Header, Footer } from './components/index';
+import { Header, About, Footer } from './components/index';
 
 class App extends Component {
     render() {
@@ -10,6 +10,7 @@ class App extends Component {
             <Router>
                 <Header />
                 <Route path="/" exact component={HomeContainer} />
+                <Route path="/about" component={About} />
                 <Footer />
             </Router>
         );
