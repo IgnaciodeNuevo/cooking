@@ -4,7 +4,7 @@
 
 :root {
   box-sizing: border-box;
-  font-family: $font-family-body-fallback;
+  color: $foreground-darkest;
   font-size: 100%;
   line-height: $line-height;
   scroll-behavior: smooth;
@@ -31,4 +31,9 @@
 
 img {
     max-width: 100%;
+}
+
+.content {
+    padding-left: $space-l;
+    padding-right: $space-l;
 }
