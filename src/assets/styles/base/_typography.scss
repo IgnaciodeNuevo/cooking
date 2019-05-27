@@ -2,11 +2,6 @@
 // Basic typography style for copy text
 //
 
-body {
-    color: $foreground-darkest;
-    font-family: $font-family-body-fallback;
-}
-
 // Headings font-size and line-height
 h1,
 h2 {
@@ -17,4 +12,9 @@ h2 {
 
 p {
     @include hyphens();
+    font-family: $font-muli;
+}
+
+.playfair {
+    font-family: $font-playfair;
 }
