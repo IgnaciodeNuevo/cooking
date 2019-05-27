@@ -9,6 +9,7 @@ function Header() {
         <header className="header" role="banner">
             <Link className="header__link" to={`/`}>
                 <Logo className="header__img" />
+                <h1 className="playfair">Cooking</h1>
             </Link>
         </header>
     )
