@@ -1,20 +1,19 @@
 .card {
-    border-radius: $border-radius-m;
     overflow: hidden;
 
     &__link {
+        border-radius: $border-radius-m;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         display: inline-block;
-        min-height: 10rem;
+        min-height: 15rem;
         width: 100%;
 
         &:hover {
             cursor: pointer;
         }
     }
-
 
     &__title {
         margin-bottom: initial;
