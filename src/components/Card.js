@@ -54,12 +54,12 @@ class Card extends Component {
             return (
                 <Fragment>
                     {this.props.recipes.map((recipe, index) => (
-                        <article className="card" key={index}>
-                            <Link className="card__link" to={`/recipe/${recipe.id}/`} data-url={`url(/assets/img/${recipe.id}-${recipe.short}_a.jpg)`}>
+                        <Link className="card" key={index} to={`/recipe/${recipe.id}/`}>
+                            <article className="card__link" data-url={`url(/assets/img/${recipe.id}-${recipe.short}_a.jpg)`}>
                                 <span className="u-visually-hidden">{recipe.name}'s link to detail.</span>
-                            </Link>
+                            </article>
                             <h2 className="card__title">{recipe.name}</h2>
-                        </article>
+                        </Link>
                     ))}
                 </Fragment>
             );

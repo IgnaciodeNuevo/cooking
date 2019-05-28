@@ -1,5 +1,11 @@
 import HomeContainer from './HomeContainer';
+import FavoritesContainer from './FavoritesContainer';
+import SearchContainer from './SearchContainer';
+import ShoppingCardContainer from './ShoppingCardContainer';
 
 export {
-    HomeContainer
+    HomeContainer,
+    FavoritesContainer,
+    SearchContainer,
+    ShoppingCardContainer
 };

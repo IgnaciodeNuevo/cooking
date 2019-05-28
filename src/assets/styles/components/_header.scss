@@ -1,15 +1,18 @@
 .header {
-    background-color: $background-dark;
+    align-items: center;
     color: $foreground-darkest;
+    display: flex;
+    justify-content: center;
+    margin-bottom: $space-l;
     padding-bottom: $space-m;
     padding-left: $space-l;
     padding-right: $space-l;
     padding-top: $space-m;
 
     &__link {
-        align-items: center;
+        align-items: inherit;
         color: inherit;
-        display: flex;
+        display: inherit;
         text-decoration: none;
 
         h1 {
