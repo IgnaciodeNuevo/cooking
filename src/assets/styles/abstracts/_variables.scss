@@ -11,9 +11,9 @@ $color-base-medium: #333333;
 $color-base-light: #808080;
 $color-base-lightest: #efefef;
 
-$token-lightest: #b9ffb7;
-$token-light: #abedc6;
-$token-medium: #98d9c2;
+$token-lightest: #4BCCC3;
+$token-light: #097F78;
+$token-medium: #054D48;
 $token-dark: #f19a3e;
 $token-darkest: #403233;
 
@@ -55,15 +55,8 @@ $font-muli: 'Muli', sans-serif;
 //
 // #Font-Weight
 //
-$font-weight-thin: 100;
-$font-weight-extralight: 200;
-$font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
 $font-weight-bold: 700;
-$font-weight-extrabold: 800;
-$font-weight-black: 900;
 
 //
 // #Scale
@@ -127,3 +120,7 @@ $z-index-s: 1;
 $z-index-m: 2;
 $z-index-l: 3;
 $z-index-xl: 4;
+
+$column-width: 16rem;
+$foo-max-width: 18.75rem;
+$row-height: 20rem;
