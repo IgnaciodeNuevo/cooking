@@ -20,7 +20,7 @@ class Card extends Component {
         const callback = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.src = entry.target.getAttribute('data-url');
+                    entry.target.style.backgroundImage = entry.target.getAttribute('data-url');
                     this.state.iObserver.unobserve(entry.target);
                 }
             });
@@ -55,7 +55,10 @@ class Card extends Component {
                 <Fragment>
                     {this.props.recipes.map((recipe, index) => (
                         <Link className="card" key={index} to={`/recipe/${recipe.id}/`}>
-                            <img className="card__img" data-url={`assets/img/${recipe.id}-${recipe.short}_a.jpg`} alt={`${recipe.name}'s link to detail.`} />
+                            <article className="card__img" data-url={`url(/assets/img/${recipe.id}-${recipe.short}_a.jpg)`}>
+                                <span className="u-visually-hidden">{recipe.name}'s link to detail.</span>
+                                <p className="card__time">{recipe.tiempo}</p>
+                            </article>
                             <h2 className="card__title">{recipe.name}</h2>
                         </Link>
                     ))}
