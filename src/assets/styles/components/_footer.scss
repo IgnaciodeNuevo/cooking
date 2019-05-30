@@ -22,6 +22,10 @@
 
         @include transition(color);
 
+        &:hover {
+            color: $foreground-light;
+        }
+
         &.active {
             color: $foreground-light;
 
