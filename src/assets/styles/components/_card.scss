@@ -1,23 +1,42 @@
 .card {
     overflow: hidden;
+    text-decoration: none;
 
-    &__link {
-        border-radius: $border-radius-m;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+    &:hover {
+        @include transition();
+
+        .card__img {
+            border-radius: initial;
+        }
+
+        .card__img + .card__title {
+            color: $foreground-light;
+        }
+    }
+
+    &__img {
+        border-radius: $border-radius-s;
+        object-position: center;
+        object-fit: cover;
         display: inline-block;
-        min-height: 15rem;
+        filter: grayscale(25%);
+        margin-bottom: $space-xs;
+        height: 100%;
+        max-height: 15rem;
         width: 100%;
+
+        @include transition(transform);
 
         &:hover {
             cursor: pointer;
+            filter: initial;
+            transform: scale(1.05);
         }
     }
 
     &__title {
-        margin-bottom: initial;
-        margin-top: initial;
-        padding: $space-m;
+        color: $foreground-darkest;
+
+        @include transition(color);
     }
 }
