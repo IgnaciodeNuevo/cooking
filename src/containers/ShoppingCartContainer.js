@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-class ShoppingCardContainer extends Component {
+class ShoppingCartContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,12 +15,12 @@ class ShoppingCardContainer extends Component {
         return (
             <Fragment>
                 <main className="content" role="main">
-                    Shopping Card
+                    Shopping Cart
                 </main>
             </Fragment>
         );
     }
 }
 
-export default ShoppingCardContainer;
+export default ShoppingCartContainer;
 
