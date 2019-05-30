@@ -5,6 +5,7 @@ import { ReactComponent as Home } from '../assets/icons/logo.svg';
 import { ReactComponent as Search } from '../assets/icons/search.svg';
 import { ReactComponent as Favorite } from '../assets/icons/favorite.svg';
 import { ReactComponent as Cart } from '../assets/icons/cart.svg';
+import { ReactComponent as Shop } from '../assets/icons/shop.svg';
 
 function Footer() {
     return (
@@ -15,7 +16,7 @@ function Footer() {
             </NavLink>
             <NavLink className="foo__link" to={`/search`}>
                 <Search className="foo__img" />
-                <h6 className="foo__title">Búsqueda</h6>
+                <h6 className="foo__title">Buscar</h6>
             </NavLink>
             <NavLink className="foo__link" to={`/favorites`}>
                 <Favorite className="foo__img" />
@@ -24,6 +25,10 @@ function Footer() {
             <NavLink className="foo__link" to={`/cart`}>
                 <Cart className="foo__img" />
                 <h6 className="foo__title">Compra</h6>
+            </NavLink>
+            <NavLink className="foo__link" to={`/shops`}>
+                <Shop className="foo__img" />
+                <h6 className="foo__title">Tiendas</h6>
             </NavLink>
         </footer>
     )
