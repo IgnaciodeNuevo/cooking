@@ -16,7 +16,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "plugins": [
+        "react-hooks"
+      ],
+      "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+      }
   },
   "browserslist": {
     "production": [
@@ -31,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^1.6.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0"
   }
