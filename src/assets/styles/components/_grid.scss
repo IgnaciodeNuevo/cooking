@@ -1,6 +1,0 @@
-.grid {
-    display: grid;
-    grid-gap: $space-m;
-    grid-auto-rows: $row-height;
-    grid-template-columns: repeat(auto-fill, minmax($column-width, 1fr));
-}
