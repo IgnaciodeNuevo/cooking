@@ -10,8 +10,11 @@ import "./layout.css"
 
 const Main = styled.main`
     margin: 0 auto;
-    maxWidth: 960;
-    padding: 0 1.0875rem 1.45rem;
+    maxWidth: var(--component-max-with);
+    padding: var(--space-m);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--space-m);
 `
 
 const Layout = ({ children }) => {
@@ -32,7 +35,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Main>{children}</Main>
+      <Main>
+        {children}
+      </Main>
       <Menu />
       <Footer
         author={data.site.siteMetadata.author}
