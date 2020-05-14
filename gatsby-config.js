@@ -3,6 +3,9 @@ module.exports = {
     title: `Cooking PWA`,
     description: `Aplicación de cocina donde puedes buscar, añadir a favoritos a la lista de la compra tus recetas o donde puedes ver tus tiendas favoritas.`,
     author: `@IgnaciodeNuevo`,
+    twitter: `https://twitter.com/IgnaciodeNuevo`,
+    github: `https://twitter.com/IgnaciodeNuevo`,
+    web: `https://ignaciodenuevo.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
