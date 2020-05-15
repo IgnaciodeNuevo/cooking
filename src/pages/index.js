@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Card from "../components/card"
@@ -11,7 +10,6 @@ const IndexPage = () => (
     <Card />
     <Card />
     <Card />
-    <Link to="/search/">Go to page 2</Link>
   </Layout>
 )
 
