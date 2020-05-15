@@ -11,16 +11,23 @@ const PageHeader = styled.header`
 `
 
 const H1 = styled.h1`
-    margin-bottom: 0;
+    margin-bottom: var(--space-l);
+
+    @media (min-width: 80em) {
+        margin-bottom: 0;
+    }
 `
 
 const Wrapper = styled.header`
     margin: 0 auto;
     max-width: var(--component-max-with);
     padding: var(--space-l);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    @media (min-width: 80em) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 
 const StyledLink = styled(props => <Link {...props} />)`

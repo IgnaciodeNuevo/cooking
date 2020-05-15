@@ -19,11 +19,8 @@ const SecondaryContent = styled.div`
 
 const HeadingWrapper = styled.header`
     margin-bottom: var(--space-l);
-
-    @media (min-width: 80em) {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
 `
 
 const H2 = styled.h2`

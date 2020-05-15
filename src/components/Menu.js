@@ -10,6 +10,12 @@ const PageMenu = styled.aside`
 const StyledLink = styled(props => <Link {...props} />)`
     color: var(--color-base-lightest);
     text-decoration: none;
+    display: block;
+    margin-bottom: var(--space-m);
+
+    @media (min-width: 33.75em) {
+        display: inline;
+    }
 
     &:hover {
         text-decoration: underline;

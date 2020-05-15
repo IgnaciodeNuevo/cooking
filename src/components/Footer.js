@@ -11,7 +11,6 @@ const PageFooter = styled.footer`
 
 const Paragraph = styled.p`
   color: var(--color-base-lightest);
-  white-space: nowrap;
 `
 
 const Link = styled.a`
