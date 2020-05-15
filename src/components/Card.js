@@ -4,13 +4,13 @@ import styled from "styled-components"
 const CardWrapper = styled.article`
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
-    transition: all 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
+    box-shadow: var(--box-shadow-base);
+    transition: all var(--transition-duration-normal) var(--animation-type-cubic-fast);
     position: relative;
     padding: var(--space-m);
 
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 10px 20px;
+        box-shadow: var(--box-shadow-hover);
         transform: translateY(-0.25rem);
         cursor: pointer;
     }
