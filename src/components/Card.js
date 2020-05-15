@@ -42,7 +42,7 @@ const Date = styled.p`
 
 const Card = () => (
   <CardWrapper>
-    <StyledLink to="/re" />
+    <StyledLink to="/recetatest" />
     <Image />
     <ContentWrapper>
         <Date>April 9, 2020</Date>
