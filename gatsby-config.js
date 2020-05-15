@@ -11,6 +11,21 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+        resolve: `gatsby-plugin-prefetch-google-fonts`,
+        options: {
+          fonts: [
+            {
+              family: `DM Serif Text`,
+              subsets: [`latin`],
+            },
+            {
+              family: `Roboto`,
+              variants: [`400`]
+            },
+          ],
+        },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
