@@ -2,10 +2,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+import Wrapper from "./wrapper"
+
 const PageFooter = styled.footer`
   background: var( --color-brand-base);
   color: var(--color-base-lightest);
-  padding: var(--space-l);
 `
 
 const Paragraph = styled.p`
@@ -19,10 +20,12 @@ const Link = styled.a`
 
 const Footer = ({ author, twitter, github, web }) => (
     <PageFooter>
-        <Paragraph>© {new Date().getFullYear()}, Built by {author}</Paragraph>
-        <Paragraph>
-            Follow me on <Link href={twitter} target="_blank" rel="noopener noreferrer me">Twitter</Link>, <Link href={github} target="_blank" rel="noopener noreferrer me">GitHub</Link> or subscribe via <Link href={web}>my web</Link>.
-        </Paragraph>
+        <Wrapper>
+            <Paragraph>© {new Date().getFullYear()}, Built by {author}</Paragraph>
+            <Paragraph>
+                Follow me on <Link href={twitter} target="_blank" rel="noopener noreferrer me">Twitter</Link>, <Link href={github} target="_blank" rel="noopener noreferrer me">GitHub</Link> or subscribe via <Link href={web}>my web</Link>.
+            </Paragraph>
+        </Wrapper>
     </PageFooter>
 )
 
