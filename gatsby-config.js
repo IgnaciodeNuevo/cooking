@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Cooking PWA`,
+    title: `Aplicación Web de Cocina`,
     description: `Aplicación de cocina donde puedes buscar, añadir a favoritos a la lista de la compra tus recetas o donde puedes ver tus tiendas favoritas.`,
-    author: `@IgnaciodeNuevo`,
+    author: `Ignacio Villanueva`,
     twitter: `https://twitter.com/IgnaciodeNuevo`,
     github: `https://twitter.com/IgnaciodeNuevo`,
     web: `https://ignaciodenuevo.com/`,

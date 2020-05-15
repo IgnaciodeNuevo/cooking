@@ -1,7 +1,8 @@
 :root {
     --color-brand-base: rebeccapurple;
+    --color-brand-hover: #a142eb;
 
-    --color-text--color-base-darkest: #1a1a1a;
+    --color-base-darkest: #0e0e0e;
     --color-base-dark: #1f1f1f;
     --color-base-medium: #333333;
     --color-base-light: #808080;
@@ -114,7 +115,7 @@ html {
 }
 
 body {
-    background-color: var(--color-text--color-base-darkest);
+    background-color: var(--color-base-darkest);
     margin: 0;
 }
 

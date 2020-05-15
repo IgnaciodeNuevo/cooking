@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+import Menu from "./menu"
+
 const PageHeader = styled.header`
     background: var( --color-brand-base);
     color: var(--color-base-lightest);
-    margin-bottom: var(--space-m);
 `
 
 const H1 = styled.h1`
@@ -41,13 +42,7 @@ const Header = ({ siteTitle }) => (
             <H1>
                 <StyledLink to="/">{siteTitle}</StyledLink>
             </H1>
-            <aside>
-                <StyledLink to="/">Inicio</StyledLink>
-                <StyledLink to="/search">Buscar</StyledLink>
-                <StyledLink to="/favorites">Favoritos</StyledLink>
-                <StyledLink to="/shoshoppinglist">Compra</StyledLink>
-                <StyledLink to="/shops">Tiendas</StyledLink>
-            </aside>
+            <Menu />
         </Wrapper>
     </PageHeader>
 )

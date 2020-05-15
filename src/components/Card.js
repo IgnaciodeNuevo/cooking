@@ -1,5 +1,8 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+
+import Image from "../components/image"
 
 const CardWrapper = styled.article`
     background-color: var(--color-base-dark);
@@ -8,13 +11,26 @@ const CardWrapper = styled.article`
     box-shadow: var(--box-shadow-base);
     transition: all var(--transition-duration-normal) var(--animation-type-cubic-fast);
     position: relative;
-    padding: var(--space-m);
 
     &:hover {
         box-shadow: var(--box-shadow-hover);
         transform: translateY(-0.5rem);
         cursor: pointer;
     }
+`
+
+const StyledLink = styled(props => <Link {...props} />)`
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+`;
+
+const ContentWrapper = styled.p`
+    padding: var(--space-m);
 `
 
 const Date = styled.p`
@@ -26,9 +42,13 @@ const Date = styled.p`
 
 const Card = () => (
   <CardWrapper>
-    <Date>April 9, 2020</Date>
-    <h3>Pasta de huevo con salsa de tomate caseros</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta non, quasi atque repudiandae, ratione maiores iure suscipit accusantium asperiores porro fugit! Ipsum aut expedita, cum perspiciatis pariatur deserunt facilis velit.</p>
+    <StyledLink to="/re" />
+    <Image />
+    <ContentWrapper>
+        <Date>April 9, 2020</Date>
+        <h3>Pasta de huevo con tomate</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta non, quasi atque repudiandae.</p>
+    </ContentWrapper>
   </CardWrapper>
 )
 
