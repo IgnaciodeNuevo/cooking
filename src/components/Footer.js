@@ -38,7 +38,7 @@ const Footer = ({ author, twitter, github, web }) => (
         <InfoWrapper>
             <Paragraph>©{new Date().getFullYear()}. Creado por {author}</Paragraph>
             <Paragraph>
-                Follow me on <Link href={twitter} target="_blank" rel="noopener noreferrer me">Twitter</Link>, <Link href={github} target="_blank" rel="noopener noreferrer me">GitHub</Link> or subscribe via <Link href={web}>my web</Link>.
+                Sígueme en <Link href={twitter} target="_blank" rel="noopener noreferrer me">Twitter</Link>, <Link href={github} target="_blank" rel="noopener noreferrer me">GitHub</Link> o échale un vistazo a <Link href={web}>web</Link>.
             </Paragraph>
         </InfoWrapper>
     </PageFooter>
