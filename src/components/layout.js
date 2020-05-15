@@ -20,7 +20,7 @@ const SecondaryContent = styled.div`
 const HeadingWrapper = styled.header`
     display: flex;
     justify-content: space-between;
-    margin-bottom: var(--space-m);
+    margin-bottom: var(--space-l);
 `
 
 const H2 = styled.h2`
