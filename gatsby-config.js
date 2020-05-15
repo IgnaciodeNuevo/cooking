@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Aplicación Web de Cocina`,
+    title: `Cookit`,
     description: `Aplicación de cocina donde puedes buscar, añadir a favoritos a la lista de la compra tus recetas o donde puedes ver tus tiendas favoritas.`,
     author: `Ignacio Villanueva`,
     twitter: `https://twitter.com/IgnaciodeNuevo`,
