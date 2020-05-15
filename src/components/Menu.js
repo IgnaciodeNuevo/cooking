@@ -9,14 +9,27 @@ const PageMenu = styled.aside`
     color: var(--color-base-lightest);
 `
 
+const StyledLink = styled(props => <Link {...props} />)`
+    color: var(--color-base-lightest);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:not(:last-of-type) {
+        margin-right: var(--space-m);
+    }
+`;
+
 const Aside = () => (
   <PageMenu>
     <Wrapper>
-        <Link to="/">Inicio</Link>
-        <Link to="/search">Buscar</Link>
-        <Link to="/favorites">Favoritos</Link>
-        <Link to="/shoshoppinglist">Compra</Link>
-        <Link to="/shops">Tiendas</Link>
+        <StyledLink to="/">Inicio</StyledLink>
+        <StyledLink to="/search">Buscar</StyledLink>
+        <StyledLink to="/favorites">Favoritos</StyledLink>
+        <StyledLink to="/shoshoppinglist">Compra</StyledLink>
+        <StyledLink to="/shops">Tiendas</StyledLink>
     </Wrapper>
   </PageMenu>
 )
