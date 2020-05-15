@@ -18,9 +18,12 @@ const SecondaryContent = styled.div`
 `
 
 const HeadingWrapper = styled.header`
-    display: flex;
-    justify-content: space-between;
     margin-bottom: var(--space-l);
+
+    @media (min-width: 80em) {
+        display: flex;
+        justify-content: space-between;
+    }
 `
 
 const H2 = styled.h2`
@@ -65,10 +68,6 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <Main>
             <Wrapper>
-                <HeadingWrapper>
-                    <H2>Title</H2>
-                    <StyledLink to="/">Ver todas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></StyledLink>
-                </HeadingWrapper>
                 <section>{children}</section>
             </Wrapper>
             <SecondaryContent>
