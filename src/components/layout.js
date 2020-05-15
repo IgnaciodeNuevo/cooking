@@ -30,7 +30,12 @@ const RouteLink = styled.a`
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    transition: all var(--transition-duration-normal) var(--animation-type-cubic-fast);
     align-items: center;
+
+    &:hover svg {
+        transform: translateX(0.25rem);
+    }
 `
 
 const Grid = styled.section`
