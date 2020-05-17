@@ -3,7 +3,6 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Card from "../components/card"
 import SEO from "../components/seo"
 
 const HeadingWrapper = styled.header`
@@ -46,13 +45,9 @@ const IndexPage = () => (
     <SEO title="Recetas" />
     <HeadingWrapper>
         <H2>Recetas</H2>
-        <StyledLink to="/">Ver todas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></StyledLink>
+        <StyledLink to="/recetas">Ver todas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></StyledLink>
     </HeadingWrapper>
-    <Grid>
-        <Card />
-        <Card />
-        <Card />
-    </Grid>
+    <p>Esto es una página web con recetas de cocina.</p>
   </Layout>
 )
 
