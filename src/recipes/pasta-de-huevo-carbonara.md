@@ -1,6 +1,6 @@
 ---
-title: "Hasta luego FrontFest"
-slug: "/pasta-de-huevo-con-tomate"
+title: "Pasta de huevo carbonara"
+slug: "/pasta-de-huevo-carbonara"
 ---
 
 ## Cierre de una etapa
