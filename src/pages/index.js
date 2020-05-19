@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Card from "../components/card"
 
 const HeadingWrapper = styled.header`
     margin-bottom: var(--space-l);
@@ -31,15 +32,45 @@ const StyledLink = styled(props => <Link {...props} />)`
     }
 `;
 
-const IndexPage = () => (
+const Grid = styled.section`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(320px - (var(--space-l) * 2)), 1fr));
+    grid-gap: var(--space-l);
+`
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Recetas" />
     <HeadingWrapper>
         <H2>Recetas</H2>
         <StyledLink to="/recetas">Ver todas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></StyledLink>
     </HeadingWrapper>
-    <p>Esto es una página web con recetas de cocina.</p>
+    <Grid>
+        {data.allMarkdownRemark.edges.slice(0, 3).map(({node}) => (
+            <Card
+                to={node.frontmatter.slug}
+                title={node.frontmatter.title}
+                excerpt={node.excerpt}
+            />
+        ))}
+    </Grid>
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+        excerpt
+        frontmatter {
+            title
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
