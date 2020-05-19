@@ -18,7 +18,7 @@ export default ({ data }) => (
     <Grid>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Card
-          to={node.frontmatter.slug}
+          to={node.fields.slug}
           title={node.frontmatter.title}
           excerpt={node.excerpt}
         />
@@ -32,10 +32,12 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
+          fields{
+            slug
+          }
           excerpt
           frontmatter {
             title
-            slug
           }
         }
       }
