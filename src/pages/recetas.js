@@ -1,4 +1,4 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
@@ -32,7 +32,7 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
-          fields{
+          fields {
             slug
           }
           excerpt

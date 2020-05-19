@@ -1,5 +1,5 @@
 ---
-title:  "Melón con Jamón"
+title: "Melón con Jamón"
 ---
 
 ## Melón con Jamón

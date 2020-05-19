@@ -1,27 +1,27 @@
-const {createFilePath} = require('gatsby-source-filesystem');
-const path = require('path');
+const { createFilePath } = require("gatsby-source-filesystem")
+const path = require("path")
 
-exports.onCreateNode = ({node, getNode, actions}) => {
-  const {createNodeField} = actions;
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
 
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === "MarkdownRemark") {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: 'pages',
-    });
+      basePath: "pages",
+    })
 
     createNodeField({
       node,
       value: slug,
-      name: 'slug',
-    });
+      name: "slug",
+    })
   }
-};
+}
 
-exports.createPages = ({graphql, actions}) => {
-  const {createPage} = actions;
-  const templateFile = path.resolve('src/pages/receta.js');
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  const templateFile = path.resolve("src/pages/receta.js")
 
   return graphql(`
     {
@@ -35,15 +35,15 @@ exports.createPages = ({graphql, actions}) => {
         }
       }
     }
-  `).then(({data}) => {
-    data.allMarkdownRemark.edges.forEach(({node}) => {
+  `).then(({ data }) => {
+    data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: templateFile,
         context: {
           slug: node.fields.slug,
         },
-      });
-    });
-  });
-};
+      })
+    })
+  })
+}

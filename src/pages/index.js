@@ -76,7 +76,7 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
-          fields{
+          fields {
             slug
           }
           excerpt
