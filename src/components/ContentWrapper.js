@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     padding: var(--space-xl) var(--space-l);
 `
 
-const ContentWrapper = ({children}) => (
+const ContentWrapper = ({ children }) => (
   <Wrapper>
     {children}
   </Wrapper>

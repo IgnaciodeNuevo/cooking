@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
@@ -39,7 +40,7 @@ const ContentWrapper = styled.p`
     padding: var(--space-m);
 `
 
-const Card = ({to, title, excerpt}) => (
+const Card = ({ to, title, excerpt }) => (
     <CardWrapper>
         <StyledLink to={to} />
         <Image />
@@ -53,4 +54,8 @@ const Card = ({to, title, excerpt}) => (
 
 export default Card
 
-
+Card.propTypes = {
+    to: PropTypes.string,
+    title: PropTypes.string,
+    excerpt: PropTypes.string,
+}

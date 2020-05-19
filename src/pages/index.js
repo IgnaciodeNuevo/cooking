@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Grid from "../components/grid"
 import Card from "../components/card"
 
 const HeadingWrapper = styled.header`
@@ -32,13 +33,7 @@ const StyledLink = styled(props => <Link {...props} />)`
     }
 `;
 
-const Grid = styled.section`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(320px - (var(--space-l) * 2)), 1fr));
-    grid-gap: var(--space-l);
-`
-
-const IndexPage = ({data}) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Recetas" />
     <HeadingWrapper>
