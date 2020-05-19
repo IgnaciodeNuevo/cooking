@@ -6,13 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const StyledLink = styled(props => <Link {...props} />)`
-    color: var(--color-brand-base);
-    text-decoration: none;
+  color: var(--color-brand-base);
+  text-decoration: none;
 
-    &:hover {
-        color: var(--color-brand-hover);
-    }
-`;
+  &:hover {
+    color: var(--color-brand-hover);
+  }
+`
 
 const RecetaTest = () => (
   <Layout>

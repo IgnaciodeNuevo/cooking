@@ -12,27 +12,27 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     {
-        resolve: `gatsby-plugin-prefetch-google-fonts`,
-        options: {
-          fonts: [
-            {
-              family: `DM Serif Text`,
-              subsets: [`latin`],
-            },
-            {
-              family: `Roboto`,
-              variants: [`400`]
-            },
-          ],
-        },
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `DM Serif Text`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`],
+          },
+        ],
+      },
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `recipes`,
-          path: `${__dirname}/src/recipes/`,
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `recipes`,
+        path: `${__dirname}/src/recipes/`,
       },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,5 +1,5 @@
-import {graphql, Link} from 'gatsby';
-import React from 'react';
+import { graphql, Link } from "gatsby"
+import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -8,7 +8,7 @@ import Grid from "../components/grid"
 import Card from "../components/card"
 
 const H2 = styled.h2`
-    margin-bottom: var(--space-l);
+  margin-bottom: var(--space-l);
 `
 
 export default ({ data }) => (
@@ -16,24 +16,24 @@ export default ({ data }) => (
     <SEO title="Recetas" />
     <H2>Recetas</H2>
     <Grid>
-        {data.allMarkdownRemark.edges.map(({node}) => (
-            <Card
-                to={node.frontmatter.slug}
-                title={node.frontmatter.title}
-                excerpt={node.excerpt}
-            />
-        ))}
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <Card
+          to={node.frontmatter.slug}
+          title={node.frontmatter.title}
+          excerpt={node.excerpt}
+        />
+      ))}
     </Grid>
   </Layout>
-);
+)
 
 export const query = graphql`
   {
     allMarkdownRemark {
       edges {
         node {
-        excerpt
-        frontmatter {
+          excerpt
+          frontmatter {
             title
             slug
           }
@@ -41,4 +41,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

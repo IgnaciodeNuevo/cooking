@@ -3,28 +3,28 @@ import React from "react"
 import styled from "styled-components"
 
 const PageMenu = styled.aside`
-    background: var( --color-brand-base);
-    color: var(--color-base-lightest);
+  background: var(--color-brand-base);
+  color: var(--color-base-lightest);
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
-    color: var(--color-base-lightest);
-    text-decoration: none;
-    display: block;
-    margin-bottom: var(--space-m);
+  color: var(--color-base-lightest);
+  text-decoration: none;
+  display: block;
+  margin-bottom: var(--space-m);
 
-    @media (min-width: 33.75em) {
-        display: inline;
-    }
+  @media (min-width: 33.75em) {
+    display: inline;
+  }
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 
-    &:not(:last-of-type) {
-        margin-right: var(--space-m);
-    }
-`;
+  &:not(:last-of-type) {
+    margin-right: var(--space-m);
+  }
+`
 
 const Aside = () => (
   <PageMenu>
@@ -36,6 +36,5 @@ const Aside = () => (
     <StyledLink to="/about">Sobre Cookit</StyledLink>
   </PageMenu>
 )
-
 
 export default Aside
