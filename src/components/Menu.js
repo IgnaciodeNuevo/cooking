@@ -33,6 +33,7 @@ const Aside = () => (
     <StyledLink to="/favorites">Favoritos</StyledLink>
     <StyledLink to="/shoshoppinglist">Compra</StyledLink>
     <StyledLink to="/shops">Tiendas</StyledLink>
+    <StyledLink to="/about">Sobre Cookit</StyledLink>
   </PageMenu>
 )
 
