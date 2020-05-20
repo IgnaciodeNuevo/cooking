@@ -185,11 +185,8 @@ h6 {
 a {
     color: var(--color-brand-primary-dark);
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
     transition: all var(--transition-duration-normal)
     var(--animation-type-cubic-fast);
-    align-items: center;
 }
 
 a:hover {
