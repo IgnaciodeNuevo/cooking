@@ -76,6 +76,7 @@
 
     --opacity: 0.25;
     --opacity-hack: 0.99;
+    --border-radius: 6px;
 
     --component-max-with: 80rem;
 }

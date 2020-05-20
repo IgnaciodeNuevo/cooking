@@ -8,7 +8,7 @@ import Image from "../components/image"
 const CardWrapper = styled.article`
   background-color: #fff;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-base);
   transition: all var(--transition-duration-normal)
     var(--animation-type-cubic-fast);
