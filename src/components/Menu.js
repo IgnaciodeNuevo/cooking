@@ -29,10 +29,11 @@ const StyledLink = styled(props => <Link {...props} />)`
 const Aside = () => (
   <PageMenu>
     <StyledLink to="/">Inicio</StyledLink>
+    {/* @TODO: Quitar comentario
     <StyledLink to="/search">Buscar</StyledLink>
     <StyledLink to="/favorites">Favoritos</StyledLink>
     <StyledLink to="/shoshoppinglist">Compra</StyledLink>
-    <StyledLink to="/shops">Tiendas</StyledLink>
+    <StyledLink to="/shops">Tiendas</StyledLink> */}
     <StyledLink to="/about">Sobre Cookit</StyledLink>
   </PageMenu>
 )
