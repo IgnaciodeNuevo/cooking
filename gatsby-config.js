@@ -5,6 +5,7 @@ module.exports = {
     author: `Ignacio Villanueva`,
     twitter: `https://twitter.com/IgnaciodeNuevo`,
     github: `https://github.com/IgnaciodeNuevo`,
+    repository: `https://github.com/IgnaciodeNuevo/cooking`,
     web: `https://ignaciodenuevo.com/`,
   },
   plugins: [
