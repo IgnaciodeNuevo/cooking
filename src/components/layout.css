@@ -1,7 +1,4 @@
 :root {
-    --color-brand-base: rebeccapurple;
-    --color-brand-hover: #a142eb;
-
     --color-base-darkest: #0e0e0e;
     --color-base-dark: #1f1f1f;
     --color-base-medium: #333333;
@@ -10,20 +7,17 @@
 
     --color-text: #ffffff;
 
-    --color-brand-teal: rgb(54, 161, 139);
-    --color-brand-rhubarb: rgb(203, 124, 122);
-    --color-brand-wheat: rgb(205, 163, 95);
-    --color-brand-petrol: rgb(38, 102, 120);
+    --color-brand-primary-dark: #6e2c9f;
+    --color-brand-secondary-dark: #d88a00;
+    --color-brand-tertiary-dark: #16949e;
 
-    --color-brand-teal-secondary: rgb(202, 215, 202);
-    --color-brand-rhubarb-secondary: rgb(229, 195, 199);
-    --color-brand-wheat-secondary: rgb(245, 214, 186);
-    --color-brand-petrol-secondary: rgb(200, 215, 229);
+    --color-brand-primary-medium: #ca82fb;
+    --color-brand-secondary-medium: #ffb22d;
+    --color-brand-tertiary-medium: #60cbd4;
 
-    --color-brand-teal-light: rgb(228, 242, 239);
-    --color-brand-rhubarb-light: rgb(242, 228, 228);
-    --color-brand-wheat-light: rgb(242, 233, 218);
-    --color-brand-petrol-light: rgb(227, 238, 241);
+    --color-brand-primary-light: #ffddff;
+    --color-brand-secondary-light: #ffdc59;
+    --color-brand-tertiary-light: #9cffff;
 
     --box-shadow-base: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
     --box-shadow-hover: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 10px 20px;
@@ -115,7 +109,7 @@ html {
 }
 
 body {
-    background-color: var(--color-base-darkest);
+    background-color: var(--color-base-lightest);
     margin: 0;
 }
 
@@ -186,4 +180,19 @@ h5 {
 h6 {
     font-size: var(--h6);
     margin-bottom: var(--margin-bottom-h6);
+}
+
+a {
+    color: var(--color-brand-primary-dark);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all var(--transition-duration-normal)
+    var(--animation-type-cubic-fast);
+    align-items: center;
+}
+
+a:hover {
+    color: var(--color-brand-primary-medium);
+    text-decoration: underline;
 }

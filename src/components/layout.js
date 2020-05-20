@@ -9,12 +9,12 @@ import Wrapper from "./wrapper"
 import "./layout.css"
 
 const Main = styled.main`
-  background-color: var(--color-base-dark);
-  color: var(--color-base-lightest);
+  background-color: #fff;
+  color: var(--color-base-dark);
 `
 
 const SecondaryContent = styled.div`
-  background-color: var(--color-base-darkest);
+  background-color: var(--color-base-lightest);
 `
 
 const HeadingWrapper = styled.header`
@@ -28,7 +28,7 @@ const H2 = styled.h2`
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
-  color: var(--color-brand-base);
+  color: var(--color-brand-primary-dark);
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -37,11 +37,12 @@ const StyledLink = styled(props => <Link {...props} />)`
   align-items: center;
 
   &:hover {
-    color: var(--color-brand-hover);
+    color: var(--color-brand-primary-medium);
+    text-decoration: underline;
   }
 
   &:hover svg {
-    color: var(--color-brand-hover);
+    color: var(--color-brand-primary-medium);
     transform: translateX(0.25rem);
   }
 `

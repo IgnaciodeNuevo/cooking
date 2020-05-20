@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Menu from "./menu"
 
 const PageFooter = styled.footer`
-  background: var(--color-brand-base);
+  background: var(--color-brand-primary-dark);
   color: var(--color-base-lightest);
 `
 

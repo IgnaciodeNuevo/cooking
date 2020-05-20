@@ -18,7 +18,7 @@ const H2 = styled.h2`
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
-  color: var(--color-brand-base);
+  color: var(--color-brand-primary-dark);
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -26,10 +26,10 @@ const StyledLink = styled(props => <Link {...props} />)`
     var(--animation-type-cubic-fast);
   align-items: center;
   &:hover {
-    color: var(--color-brand-hover);
+    color: var(--color-brand-primary-medium);
   }
   &:hover svg {
-    color: var(--color-brand-hover);
+    color: var(--color-brand-primary-medium);
     transform: translateX(0.25rem);
   }
 `

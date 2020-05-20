@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 const PageMenu = styled.aside`
-  background: var(--color-brand-base);
+  background: var(--color-brand-primary-dark);
   color: var(--color-base-lightest);
 `
 

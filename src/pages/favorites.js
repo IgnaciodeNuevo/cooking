@@ -6,11 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const StyledLink = styled(props => <Link {...props} />)`
-  color: var(--color-brand-base);
+  color: var(--color-brand-primary-dark);
   text-decoration: none;
 
   &:hover {
-    color: var(--color-brand-hover);
+    color: var(--color-brand-primary-medium);
   }
 `
 
