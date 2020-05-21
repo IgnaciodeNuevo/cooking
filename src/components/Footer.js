@@ -21,6 +21,13 @@ const Paragraph = styled.p`
 
 const Link = styled.a`
   color: var(--color-base-lightest);
+  text-decoration: underline;
+  font-weight: 800;
+
+  &:hover {
+    color: var(--color-base-lightest);
+    text-decoration: none;
+  }
 `
 
 const MenuWrapper = styled.div`

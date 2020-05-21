@@ -5,6 +5,10 @@ const Form = styled.form`
   background-color: var(--color-brand-tertiary-medium);
   padding: var(--space-l);
   border-radius: var(--border-radius);
+
+  @media (min-width: 80em) {
+    width: 50%;
+  }
 `
 
 const Wrapper = styled.div`
@@ -25,6 +29,7 @@ const Input = styled.input`
   border: 3px solid var(--color-brand-primary-dark);
   border-radius: var(--border-radius);
   color: var(--color-brand-primary-dark);
+  width: 100%;
 `
 
 const Textarea = styled.textarea`
@@ -35,6 +40,8 @@ const Textarea = styled.textarea`
   border: 3px solid var(--color-brand-primary-dark);
   border-radius: var(--border-radius);
   color: var(--color-brand-primary-dark);
+  width: 100%;
+  resize: none;
 `
 
 const Button = styled.button`
@@ -73,7 +80,7 @@ const Contact = () => (
 
         <Wrapper>
             <Label htmlFor="message">Mesaje:</Label>
-            <Textarea name="message" placeholder="Mi mensaje es..." />
+            <Textarea name="message" rows="8" placeholder="Mi mensaje es..." />
         </Wrapper>
 
         <Button type="submit">Enviar</Button>

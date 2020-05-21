@@ -12,12 +12,16 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
   display: block;
   margin-bottom: var(--space-m);
+  font-weight: 800;
+  font-feature-settings: "c2sc","smcp";
+  font-variant-caps: opentype-all-opentype-small-caps;
 
   @media (min-width: 33.75em) {
     display: inline;
   }
 
   &:hover {
+    color: var(--color-base-lightest);
     text-decoration: underline;
   }
 
