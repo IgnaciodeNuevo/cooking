@@ -66,7 +66,7 @@ const H2 = styled.h2`
 `
 
 const Contact = () => (
-  <Form name="contact" method="POST" data-netlify="true">
+  <Form name="contact" action="/success/" method="POST" data-netlify="true">
     <H2>Contacto</H2>
     <Wrapper>
       <Label htmlFor="name">Tu nombre:</Label>
