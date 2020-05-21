@@ -26,7 +26,7 @@ const Link = styled.a`
 const MenuWrapper = styled.div`
   margin: 0 auto;
   max-width: var(--component-max-with);
-  padding: var(--space-xl) var(--space-l) var(--space-l);
+  padding: var(--space-m) var(--space-l) var(--space-l);
 
   @media (min-width: 80em) {
     padding-top: 0;
@@ -56,6 +56,7 @@ const H2 = styled.h2`
   padding-left: var(--space-l);
 
   @media (min-width: 80em) {
+    margin-bottom: var(--space-m);
     padding-top: var(--space-l);
     padding-left: var(--space-xl);
   }
