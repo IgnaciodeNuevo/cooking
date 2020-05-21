@@ -28,8 +28,9 @@
     --letter-spacing-s: 0.025em;
     --letter-spacing-m: 0.05em;
 
-    --scale: 1.2;
-    --font-base: 90%;
+    --scale: 1.1;
+    --heading-scale: 1.5;
+    --font-base: 100%;
     --space-base: 1rem;
 
     --space-xxs: calc(var(--space-base) / 8);
@@ -40,12 +41,12 @@
     --space-xl: calc(var(--space-base) * 4);
     --space-xxl: calc(var(--space-base) * 8);
 
-    --margin-bottom-h1: .65em;
-    --margin-bottom-h2: .7em;
-    --margin-bottom-h3: .75em;
-    --margin-bottom-h4: .8em;
-    --margin-bottom-h5: .85em;
-    --margin-bottom-h6: .9em;
+    --margin-h1: .65em;
+    --margin-h2: .7em;
+    --margin-h3: .75em;
+    --margin-h4: .8em;
+    --margin-h5: .85em;
+    --margin-h6: .9em;
 
     --icon-xxs: 0.125em;
     --icon-xs: 0.25em;
@@ -83,7 +84,7 @@
 
 @media screen and (min-width: 40em) {
     :root {
-        --font-base: 100%;
+        --font-base: 105%;
         --space-base: 1rem;
     }
 }
@@ -97,7 +98,7 @@
 
 @media screen and (min-width: 160em) {
     :root {
-        --font-base: 125%;
+        --font-base: 120%;
         --space-base: 1.2rem;
     }
 }
@@ -155,32 +156,56 @@ h6 {
 
 h1 {
     font-size: var(--h1);
-    margin-bottom: var(--margin-bottom-h1);
+    margin-bottom: var(--margin-h1);
+}
+
+p + h1 {
+    margin-top: calc(var(--margin-h1) * var(--heading-scale));
 }
 
 h2 {
     font-size: var(--h2);
-    margin-bottom: var(--margin-bottom-h2);
+    margin-bottom: var(--margin-h2);
+}
+
+p + h2 {
+    margin-top: calc(var(--margin-h2) * var(--heading-scale));
 }
 
 h3 {
     font-size: var(--h3);
-    margin-bottom: var(--margin-bottom-h3);
+    margin-bottom: var(--margin-h3);
+}
+
+p + h3 {
+    margin-top: calc(var(--margin-h3) * var(--heading-scale));
 }
 
 h4 {
     font-size: var(--h4);
-    margin-bottom: var(--margin-bottom-h4);
+    margin-bottom: var(--margin-h4);
+}
+
+p + h4 {
+    margin-top: calc(var(--margin-h4) * var(--heading-scale));
 }
 
 h5 {
     font-size: var(--h5);
-    margin-bottom: var(--margin-bottom-h5);
+    margin-bottom: var(--margin-h5);
+}
+
+p + h5 {
+    margin-top: calc(var(--margin-h5) * var(--heading-scale));
 }
 
 h6 {
     font-size: var(--h6);
-    margin-bottom: var(--margin-bottom-h6);
+    margin-bottom: var(--margin-h6);
+}
+
+p + h6 {
+    margin-top: calc(var(--margin-h6) * var(--heading-scale));
 }
 
 a {
@@ -191,6 +216,5 @@ a {
 }
 
 a:hover {
-    color: var(--color-brand-primary-medium);
     text-decoration: underline;
 }

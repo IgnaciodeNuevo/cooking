@@ -35,6 +35,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
 
   &:hover {
+    color: var(--color-base-lightest);
     text-decoration: underline;
   }
 
