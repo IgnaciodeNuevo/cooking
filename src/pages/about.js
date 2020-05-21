@@ -21,6 +21,8 @@ const Favorites = () => {
         siteMetadata {
           web
           repository
+          twitter
+          github
         }
       }
     }
@@ -45,8 +47,23 @@ const Favorites = () => {
       <p>
         Su crees que puede haber alguna funcionalidad extra que te pudiese
         interesar no dudes en contactarme o si te dedicas al desarrollo fontend
-        y tabajas con Gatsby y React (librería con la que ha construido esta
-        aplicación web) crees tu dicha{" "}
+        y tabajas con{" "}
+        <a
+          href="https://www.gatsbyjs.org"
+          target="_blank"
+          rel="noopener noreferrer me"
+        >
+          Gatsby
+        </a>{" "}
+        y{" "}
+        <a
+          href="https://reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer me"
+        >
+          React
+        </a>{" "}
+        (librería con la que ha construido esta aplicación web) crees tu dicha{" "}
         <a
           href={data.site.siteMetadata.repository}
           target="_blank"
@@ -64,7 +81,90 @@ const Favorites = () => {
           rel="noopener noreferrer"
         >
           fontend developer
+        </a>.
+      </p>
+      <p>
+        Mientras que mis principales habilidades están en el rendimiento de la
+        interfaz, el diseño de respuesta, la tipografía web y la accesibilidad,
+        mi mentalidad es la de un diseñador. Hago productos e interfaces
+        encantadores con un ojo para la experiencia del usuario, que pone las
+        necesidades del usuario en primer lugar.
+      </p>
+      <p>
+        Aprendo de la comunidad y me encanta compartir lo que he aprendido y
+        devolverlo. Escribo artículos y hablo en eventos. También paso algo de
+        tiempo{" "}
+        <a
+          href="https://ignaciodenuevo.com/2019/06/12/mentoring-mi-camino/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          mentorizando gente
         </a>
+        , así que si crees que puedo ayudarte, no dudes en decírmelo.
+      </p>
+      <p>
+        Anfitrión de{" "}
+        <a
+          href="http://wecodesign.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WeCodeSign
+        </a>
+        , un podcast sobre frontend, UX y diseño web. Cofundador del{" "}
+        <a
+          href="http://frontfest.es/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          FrontFest.es
+        </a>{" "}
+        (hasta que se dejó de hacer en 2020 la mayor conferencia sobre
+        desarrollo de frontend en España) y también cofundador de{" "}
+        <a
+          href="https://www.meetup.com/Open-Source-Weekends/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Source Weekends
+        </a>
+        , un encuentro mensual de Open Source. 😊
+      </p>
+      <p>
+        Cuando no estoy creando sitios web, me encanta pasar mi tiempo
+        aprendiendo sobre tipografía, yendo a cursos de cocina o jugando al
+        baloncesto con amigos.
+      </p>
+      <p>
+        Puedes seguirme en{" "}
+        <a
+          href={data.site.siteMetadata.twitter}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+        , forkear en{" "}
+        <a
+          href={data.site.siteMetadata.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        , suscribirte a través de{" "}
+        <a
+          href="https://ignaciodenuevo.com/feed.xml"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RSS Feed
+        </a>{" "}
+        o enviarme un correo electrónico a{" "}
+        <a href="mailto:ignaciodenuevo@posteo.net?Subject=Contact% 20from%20IgnaciodeNuevo's%20website">
+          ignaciodenuevo@posteo.net
+        </a>.
       </p>
       <h2>Colofón</h2>
       <p>
@@ -146,12 +246,10 @@ const Favorites = () => {
         <li>DM Serif Text para titulares.</li>
         <li>Roboto para el resto del texto.</li>
       </ul>
-
       <p>
         Otras herramientas, scripts y servicios utilizados dignos de mención
         son:
       </p>
-
       <ul>
         <li>
           Iconos{" "}
