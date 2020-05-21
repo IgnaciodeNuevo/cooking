@@ -66,25 +66,25 @@ const H2 = styled.h2`
 `
 
 const Contact = () => (
-    <Form name="contact" method="POST" data-netlify="true">
-        <H2>Contacto</H2>
-        <Wrapper>
-            <Label htmlFor="name">Tu nombre:</Label>
-            <Input name="name" type="text" placeholder="D. Joe" />
-        </Wrapper>
+  <Form name="contact" method="POST" data-netlify="true">
+    <H2>Contacto</H2>
+    <Wrapper>
+      <Label htmlFor="name">Tu nombre:</Label>
+      <Input name="name" type="text" placeholder="D. Joe" />
+    </Wrapper>
 
-        <Wrapper>
-            <Label htmlFor="email">Tu email:</Label>
-            <Input name="email" type="email" placeholder="d.joe@email.com" />
-        </Wrapper>
+    <Wrapper>
+      <Label htmlFor="email">Tu email:</Label>
+      <Input name="email" type="email" placeholder="d.joe@email.com" />
+    </Wrapper>
 
-        <Wrapper>
-            <Label htmlFor="message">Mesaje:</Label>
-            <Textarea name="message" rows="8" placeholder="Mi mensaje es..." />
-        </Wrapper>
+    <Wrapper>
+      <Label htmlFor="message">Mesaje:</Label>
+      <Textarea name="message" rows="8" placeholder="Mi mensaje es..." />
+    </Wrapper>
 
-        <Button type="submit">Enviar</Button>
-    </Form>
+    <Button type="submit">Enviar</Button>
+  </Form>
 )
 
 export default Contact
