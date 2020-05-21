@@ -96,7 +96,7 @@ const Footer = ({ author, twitter, github, web }) => (
             <Link href={github} target="_blank" rel="noopener noreferrer me">
               GitHub
             </Link>{" "}
-            o échale un vistazo a <Link href={web}>web</Link>.
+            o échale un vistazo a mi <Link href={web}>web</Link>.
           </Paragraph>
         </InfoWrapper>
       </div>
