@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
-import Image from "../components/image"
+// import Image from "../components/image"
 
 const CardWrapper = styled.article`
   background-color: #fff;
@@ -45,7 +45,7 @@ const ContentWrapper = styled.p`
 const Card = ({ to, title, excerpt }) => (
   <CardWrapper>
     <StyledLink to={to} />
-    <Image />
+    {/* <Image /> */}
     <ContentWrapper>
       <h3>{title}</h3>
       <p>{excerpt}</p>
