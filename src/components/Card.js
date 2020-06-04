@@ -21,7 +21,7 @@ const CardWrapper = styled.article`
   }
 
   &:focus {
-      border: 3px soli var(--color-brand-primary-dark);
+    border: 3px soli var(--color-brand-primary-dark);
   }
 `
 
@@ -35,7 +35,7 @@ const StyledLink = styled(props => <Link {...props} />)`
 
   &:focus {
     border: 3px soli var(--color-brand-primary-dark);
-}
+  }
 `
 
 const ContentWrapper = styled.p`
