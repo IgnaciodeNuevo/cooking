@@ -14,7 +14,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   }
 `
 
-const Favorites = () => {
+const About = () => {
   const data = useStaticQuery(graphql`
     query SiteAboutQuery {
       site {
@@ -34,19 +34,31 @@ const Favorites = () => {
       <h2>Sobre Cookit</h2>
       <p>
         Esta aplicación web está pensada para tener recetas accesibles en
-        cualquier momento y si decides ir a comprar que puedas tener una lista
-        de la compra, tus tiendas favoritas con sus datos, una sección con
-        recetas favoritas y un sistema de búsqueda.
+        cualquier momento. Con las algunas funcionalidades que creo me serán
+        útiles:
       </p>
+      <ul>
+        <li>Lista de la compra</li>
+        <li>Tiendas favoritas</li>
+        <li>Recetas favoritas</li>
+        <li>Sistema de búsqueda de recetas</li>
+      </ul>
       <p>
         La idea de esta app surge dado mi interés por la cocina para poder tener
-        en un dispositivo acceso a cosas que para mi son importantes y me son
-        útiles, surge de hacer un proyecto personal sin más intención que hacer
-        algo que a mi me sirva.
+        en un dispositivo (móvil o de sobremesa) acceso a cosas que para mi son
+        importantes.
       </p>
       <h2>Sobre Mi</h2>
       <p>
-        Soy Ignacio Villanueva y trabajo como{" "}
+        Soy{" "}
+        <a
+          href={data.site.siteMetadata.web}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ignacio Villanueva
+        </a>{" "}
+        y trabajo como{" "}
         <a
           href={data.site.siteMetadata.web}
           target="_blank"
@@ -57,12 +69,11 @@ const Favorites = () => {
         .
       </p>
       <p>
-        Mientras que mis principales habilidades están en el rendimiento de la
-        interfaz, el diseño de respuesta, la tipografía web y la accesibilidad,
-        mi mentalidad es la de un diseñador.
+        Me especializo en el rendimiento, diseño de responsive, tipografía web y
+        accesibilidad.
       </p>
       <p>
-        Escribo artículos y hablo en eventos. También paso algo de tiempo{" "}
+        Escribo artículos y he sido ponente en eventos. También paso tiempo{" "}
         <a
           href="https://ignaciodenuevo.com/2019/06/12/mentoring-mi-camino/"
           target="_blank"
@@ -70,7 +81,7 @@ const Favorites = () => {
         >
           mentorizando gente
         </a>
-        , así que si crees que puedo ayudarte, no dudes en decírmelo.
+        .
       </p>
       <p>
         Anfitrión de{" "}
@@ -98,7 +109,7 @@ const Favorites = () => {
         >
           Open Source Weekends
         </a>
-        , un encuentro mensual sobre software Open Source. 😊
+        , un Meetup mensual sobre software Open Source. 😊
       </p>
       <p>
         Puedes seguirme en{" "}
@@ -204,7 +215,7 @@ const Favorites = () => {
         >
           CloudFront
         </a>{" "}
-        actúa como CDN, protección y optimización de la caché.
+        actúa como CDN.
       </p>
       <p>Las fuentes utilizadas son:</p>
       <ul>
@@ -243,4 +254,4 @@ const Favorites = () => {
   )
 }
 
-export default Favorites
+export default About
