@@ -13,11 +13,15 @@ const CardWrapper = styled.article`
   transition: all var(--transition-duration-normal)
     var(--animation-type-cubic-fast);
   position: relative;
+  cursor: pointer;
 
   &:hover {
     box-shadow: var(--box-shadow-hover);
     transform: translateY(-0.5rem);
-    cursor: pointer;
+  }
+
+  &:focus {
+      border: 3px soli var(--color-brand-primary-dark);
   }
 `
 
@@ -28,6 +32,10 @@ const StyledLink = styled(props => <Link {...props} />)`
   z-index: 1;
   width: 100%;
   height: 100%;
+
+  &:focus {
+    border: 3px soli var(--color-brand-primary-dark);
+}
 `
 
 const ContentWrapper = styled.p`
