@@ -46,17 +46,28 @@ const Textarea = styled.textarea`
 
 const Button = styled.button`
   background-color: var(--color-brand-primary-dark);
-  border: 0;
   padding: var(--space-m);
   border-radius: var(--border-radius);
   font-size: var(--font-base);
   color: var(--color-base-lightest);
+  cursor: pointer;
+  border: 2px solid var(--color-brand-primary-dark);
+  border-top-width: 2px;
+  box-shadow: var(--box-shadow-base);
   transition: all var(--transition-duration-normal)
     var(--animation-type-cubic-fast);
 
   &:hover {
     background-color: var(--color-brand-primary-medium);
-    cursor: pointer;
+    border-color: var(--color-brand-primary-medium);
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-0.125rem);
+  }
+
+  &:focus {
+    outline-style: none;
+    outline-color: -webkit-focus-ring-color;
+    outline-width: 5px;
   }
 `
 
@@ -66,10 +77,18 @@ const H2 = styled.h2`
 `
 
 const Contact = () => (
-  <Form name="contact" action="/success/" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  <Form
+    name="contact"
+    action="/success/"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
     <input type="hidden" name="form-name" value="contact" />
     <p hidden>
-        <label>Don’t fill this out: <input name="bot-field" /></label>
+      <label>
+        Don’t fill this out: <input name="bot-field" />
+      </label>
     </p>
     <H2>Contacto</H2>
     <Wrapper>
