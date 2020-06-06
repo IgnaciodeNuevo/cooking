@@ -219,8 +219,8 @@ const About = () => {
       </p>
       <p>Las fuentes utilizadas son:</p>
       <ul>
-        <li>DM Serif Text para titulares</li>
-        <li>Roboto para el resto del texto</li>
+        <li>Playfair Display para titulares</li>
+        <li>Source Sans Pro para el resto del texto</li>
       </ul>
       <p>
         Otras herramientas, scripts y servicios utilizados dignos de mención

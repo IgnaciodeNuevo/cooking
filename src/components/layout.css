@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
 :root {
     --color-base-darkest: #0e0e0e;
     --color-base-dark: #1f1f1f;
@@ -22,8 +24,8 @@
     --box-shadow-base: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
     --box-shadow-hover: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 10px 20px;
 
-    --font-family-heading: 'DM Serif Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, serif;
-    --font-family-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Playfair Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, serif;
+    --font-family-body: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
     --letter-spacing-s: 0.025em;
     --letter-spacing-m: 0.05em;
@@ -107,6 +109,7 @@ html {
     box-sizing: border-box;
     color: var(--color-base-dark);
     font-family: var(--font-family-body);
+    font-weight: 300;
     line-height: var(--line-height-s);
 }
 
