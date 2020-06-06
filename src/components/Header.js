@@ -33,6 +33,7 @@ const Wrapper = styled.header`
 const StyledLink = styled(props => <Link {...props} />)`
   color: var(--color-base-lightest);
   text-decoration: none;
+  font-weight: 600;
 
   &:hover {
     color: var(--color-base-lightest);

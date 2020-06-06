@@ -12,7 +12,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
   display: block;
   margin-bottom: var(--space-m);
-  font-weight: 800;
+  font-weight: 600;
   font-feature-settings: "c2sc", "smcp";
   font-variant-caps: opentype-all-opentype-small-caps;
 

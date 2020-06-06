@@ -23,6 +23,7 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
+  font-family: var(--font-family-body);
   font-size: var(--h6);
   display: block;
   padding: var(--space-s);
@@ -33,6 +34,7 @@ const Input = styled.input`
 `
 
 const Textarea = styled.textarea`
+  font-family: var(--font-family-body);
   font-size: var(--h6);
   display: block;
   margin-bottom: var(--space-s);
@@ -48,6 +50,7 @@ const Button = styled.button`
   background-color: var(--color-brand-primary-dark);
   padding: var(--space-m);
   border-radius: var(--border-radius);
+  font-family: var(--font-family-body);
   font-size: var(--font-base);
   color: var(--color-base-lightest);
   cursor: pointer;

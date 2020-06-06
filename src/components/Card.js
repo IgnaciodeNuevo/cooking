@@ -24,6 +24,9 @@ const CardWrapper = styled.article`
     border: 3px soli var(--color-brand-primary-dark);
   }
 `
+const Excerpt = styled.p`
+  font-weight: 300;
+`
 
 const StyledLink = styled(props => <Link {...props} />)`
   position: absolute;
@@ -48,7 +51,7 @@ const Card = ({ to, title, excerpt }) => (
     <Image />
     <ContentWrapper>
       <h3>{title}</h3>
-      <p>{excerpt}</p>
+      <Excerpt>{excerpt}</Excerpt>
     </ContentWrapper>
   </CardWrapper>
 )
